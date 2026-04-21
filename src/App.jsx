@@ -165,7 +165,7 @@ export default function App() {
           <span style={{ fontSize: mob ? 8 : 9, color: "#475569" }}>Fund + Tech</span>
         </div>
 
-        <div style={{ display: "flex", gap: 8, marginBottom: mob ? 12 : 14 }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: 8, marginBottom: mob ? 12 : 14 }}>
           <input name="ticker" value={vals.ticker} onChange={h} placeholder="TICKER" type="text"
             style={{ flex: 1, background: "rgba(59,130,246,0.07)", border: "1.5px solid rgba(59,130,246,0.2)", borderRadius: 7, padding: mob ? "12px 14px" : "9px 12px", color: "#60a5fa", fontSize: mob ? 18 : 17, fontFamily: "'Outfit'", fontWeight: 700, letterSpacing: 1.5, outline: "none", textTransform: "uppercase" }} />
           <input name="price" value={vals.price} onChange={h} placeholder="Price ($)" type="number" inputMode="decimal"
